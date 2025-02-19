@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz App</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz App</h1>
+
+        <div id="level-selection">
+            <h2>Select Difficulty</h2>
+            <button onclick="startQuiz('easy')">Easy</button>
+            <button onclick="startQuiz('medium')">Medium</button>
+            <button onclick="startQuiz('hard')">Hard</button>
+        </div>
+
+        <div id="quiz-section" style="display: none;">
+            <p id="question-text">
+                <div id="loading"></div>
+            </p>
+            <div id="answer-buttons"></div>
+            <div id="timer-container">
+                <span>Time Left: <span id="timer">30</span></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

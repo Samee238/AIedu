@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.quiz-container {
+    background: white;
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#loading{
+    font-size: 20px;
+    font-weight: bold;
+    color: #3498db;
+    margin-left: 10px;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards, textAnimation 2s ease-in-out 2s forwards;
+}
+
+/* Spinner style */
+.spinner {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+/* Animation for spinner rotation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Fade-in effect for text */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Text animation after fade-in */
+@keyframes textAnimation {
+    0% { color: #3498db; }
+    50% { color: #e74c3c; }
+    100% { color: #3498db; }
+}
