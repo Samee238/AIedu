@@ -11,7 +11,7 @@ from flask_cors import CORS
 # Load environment variables
 load_dotenv()
 
-# Initialize Flask app
+# Initialize Flask app commit by biswa
 app = Flask(__name__)
 CORS(app)
 
